@@ -1,1 +1,348 @@
-h1
+/* !Основные настройки */
+/* Указание box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Удаление внутренних отступов */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Удаление внешних отступов */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Основные настройки body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+/* Изображения */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Шрифты для input и button */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ! */
+
+/* !Дизайн */
+body {
+    background-color: #1F1F1F;
+    font-family: 'Popins', sans-serif;
+    color: #989898;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1144px;
+    margin: 0 auto;
+}
+
+/* ! */
+
+/* Header */
+.header {
+    min-height: 100vh;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 150px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav__menu {
+    display: flex;
+    list-style: none;
+    color: #FFFFFF
+}
+
+.nav__menu li {
+    padding-left: 26px;
+}
+
+.nav__menu li a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.nav__menu li a:hover {
+    color: #00FF29;
+}
+
+/* Header inner */
+.header__text {
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+}
+
+.header__name {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header__profession {
+    font-size: 64px;
+}
+
+.btn {
+    background-color: #00FF29;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.header__inner__right {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url("photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Основной контент */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__inner__resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+    min-height: 400px;
+}
+
+.main__img {
+    width: 400px;
+    box-shadow: -34px -34px #6FB67E;
+}
+
+.main-header {
+    font-size: 64px;
+    letter-spacing: 5px;
+}
+
+/* Скилы */
+.main__header {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.main__header::before {
+    margin-top: 50px;
+    display: block;
+    align-self:center;
+    width: 80px;
+    content: "";
+    height: 2px;
+    background-color: #fff;
+}
+
+.main__inner__skills {
+    min-height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.main__inner__skills.set__center {
+    align-items: center;
+}
+
+.main__inner__skills .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.main__inner__skills .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.main__inner__skills .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.main__inner__skills .percent svg .html {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.main__inner__skills .percent svg .html {
+    stroke-dashoffset: calc(440 - (440 * 67) / 100);
+    stroke: #00FF29;
+}
+
+.main__inner__skills .percent svg .css {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.main__inner__skills .percent svg .css {
+    stroke-dashoffset: calc(440 - (440 * 54) / 100);
+    stroke: #00FF29;
+}
+
+.main__inner__skills .percent svg .js {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.main__inner__skills .percent svg .js {
+    stroke-dashoffset: calc(440 - (440 * 30) / 100);
+    stroke: #00FF29;
+}
+
+.main__inner__skills .percent svg .git {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.main__inner__skills .percent svg .git {
+    stroke-dashoffset: calc(440 - (440 * 20) / 100);
+    stroke: #00FF29;
+}
+
+.main__inner__skills .percent svg .figma {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.main__inner__skills .percent svg .figma {
+    stroke-dashoffset: calc(440 - (440 * 57) / 100);
+    stroke: #00FF29;
+}
+
+
+.main__inner__skills .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.main__inner__skills .percent .number h2 span {
+    font-size: 24px;
+}
+
+.main__inner__skills .text {
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main__inner__skills.set__col {
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main__skills__image {
+    width: 400px;
+}
+
+/* Нижний колонтитул */
+.footer {    
+    margin-top: 50px;
+    border-top: 2px solid #f3f3f3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer i {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer__item span {
+    color: #FFFFFF;
+    font-weight: 700;
+}
