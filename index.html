@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Murad Galayev CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7575e65460.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="home">
+
+        <header class="header">
+
+            <nav class="nav">
+                <a href="index.html"><img class="nav__logo" src="CV.svg" alt="logo" width="69"></a>
+                <ul class="nav__menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#my_projects">My projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__inner">
+                <div class="header__inner__left">
+                    <span class="header__text">Hello</span>
+                    <span class="header__name">I'm Murad Galayev</span>
+                    <h1 class="header__profession">Frontend Developer</h1>
+                </div>
+
+                <div class="header__inner__right"></div>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <!-- Обо мне -->
+            <section class="wrapper">
+                <div class="main__inner__resume" id="summary">
+                    <img class="main__img" src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    <div class="wrapper__inner__right">
+                        <h2 class="main-header">Resume</h2>
+                        <p>Interested in IT since school. I have always been fascinated by the direction of "web
+                            development".
+                            I am a lawyer by education, but even taking this into account, I worked mainly in IT areas.
+                            The goal is to learn web development at the professional level in order to be able to offer
+                            high quality IT solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Скилы -->
+                <section class="main__inner__skills set__center">
+                    <h2 class="main__header" id="skills">Skills</h2>
+
+                    <div class="percent">
+                        <svg>
+                            <circle class="html" cx="70" cy="70" r="70"></circle>
+                            <circle class="html" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>67<span>%</span></h2>
+                        </div>
+                        HTML
+                    </div>
+
+                    <div class="percent">
+                        <svg>
+                            <circle class="css" cx="70" cy="70" r="70"></circle>
+                            <circle class="css" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>54<span>%</span></h2>
+                        </div>
+                        CSS
+                    </div>
+
+                    <div class="percent">
+                        <svg>
+                            <circle class="js" cx="70" cy="70" r="70"></circle>
+                            <circle class="js" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>30<span>%</span></h2>
+                        </div>
+                        JS
+                    </div>
+
+                    <div class="percent">
+                        <svg>
+                            <circle class="git" cx="70" cy="70" r="70"></circle>
+                            <circle class="git" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>20<span>%</span></h2>
+                        </div>
+                        GIT
+                    </div>
+
+                    <div class="percent">
+                        <svg>
+                            <circle class="figma" cx="70" cy="70" r="70"></circle>
+                            <circle class="figma" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>57<span>%</span></h2>
+                        </div>
+                        Figma
+                    </div>
+
+                </section>
+
+                <section class="main__inner__skills">
+                    <div class="main__skills__box">
+                        <h2 class="main__header">Language</h2>
+                        <h3 class="main__skills__box__text">English</h3>
+                        <p>I can read the text and understand its essence. Sometimes I can use an online translator.</p>
+                    </div>
+                    <div class="main__skills__box">
+                        <h2 class="main__header">Education</h2>
+                        <h3 class="main__header__2">Offline: Ingush State University</h3>
+                        <ul>
+                            <li>Law and organization</li>
+                        </ul>
+                        <h3 class="main__header__2">Online: freecodecamp - USA</h3>
+                        <ul>
+                            <li>Responsive Web Design</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="main__inner__skills set__col">
+                    <h2 class="main__header">Experience</h2>
+                    <h3>Galsoft - Web developer on WordPress website builder Main responsibilities</h3>
+                    <ul>
+                        <li>Website development</li>
+                        <li>Promotion in search engines</li>
+                    </ul>
+                </section>
+
+                
+                <section class="main__inner__skills">
+                    <h2 class="main__header" id="my_projects">My projects</h2>
+                    <div class="projects__item">
+                        <a href="https://wanderer0001.github.io/rsschool-cv/cv"><img class="main__skills__image" src="cv-proj.png" alt="image for my projects cv"></a>
+                        <div>CV - Murad Galayev</div>
+                    </div>
+                    <div class="projects__item">
+                        <img class="main__skills__image" src="image_projects.png" alt="image for my projects cv">
+                        <div>New projects...</div>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer__item">
+                <a href="https://rs.school/js/" target="_blank"><img src="logo_rs.svg" alt="logotype rsschool"></a>
+            </div>
+            <div class="footer__item">
+                <a href="https://github.com/wanderer0001" target="_blank"><i class="fa-brands fa-github">@wanderer0001</i></a>
+                <span>2022</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
